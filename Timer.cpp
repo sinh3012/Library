@@ -7,29 +7,28 @@ class Timer
 {
 public:
 	Timer();
-	Timer(std::function<void()> f);
+	Timer(std::function<void()> foo);
 	
 	void operation();
 
-	void set(std::function<void()> f);
+	void set(std::function<void()> foo);
 
 private:
 	std::function<void()> action;
 };
 
 Timer::Timer()
-	: action()
 {
 }
 
-Timer::Timer(std::function<void()> f)
-	: action(f)
+Timer::Timer(std::function<void()> foo)
+	: action(foo)
 {
 }
 
-void Timer::set(std::function<void()> f)
+void Timer::set(std::function<void()> foo)
 {
-	action = f;
+	action = foo;
 }
 
 void Timer::operation() {
