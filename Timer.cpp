@@ -35,7 +35,7 @@ void Timer::operation() {
 	if (action) {
 		action();
 	} else {
-		cout << "Functiom empty" << endl;
+		cout << "Function empty" << endl;
 	}
 }
 
